@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfume Shop</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="sticky-top">
+	<nav id="myNav" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div id="home" class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-family: didot, serif;">Lilac Homes Marbella</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><img src="heart.png" alt="profile" width="20" height="20"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><img src="search.png" alt="profile" width="18" height="18"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="LogIn.html"><img src="user.png" alt="profile" width="16" height="16"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><img src="shop.png" alt="profile" width="21" height="21"></a></a>
+        </li>
+       </ul>
+     </div>
+    </nav>
+	</header>
+
+	<header>
+	<div id="secondNav">
+		<ul class="nav d-flex justify-content-around">
+          <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="HomeCandle.html" style="color: black;">HOME CANDLE</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link active" href="Diffusers.html" style="color: black;">DIFFUSERS</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link active" href="FragranceSprayes.html" style="color: black;">FRAGRANCE SPRAYS</a>
+          </li>
+        </ul>
+    </div>
+
+    <div id="introHome" class="container-fluid">
+    	<div id="introhomeWord">
+    		<p>MY HOME</p>
+    		<i>PERFUME</i>
+    	</div>
+
+    	<div id="shopnowButton">
+    		<button>SHOP NOW</button>
+    	</div>
+    </div>
+	</header>
+
+	<section class="container-fluid">
+		<div id="collection" class="d-flex justify-content-around">
+			<div><p>NEW COLLECTION</p></div>
+			<div id="collectionButton">
+				<button><img src="arrowLeft.png" alt="profile" width="21" height="21"></button>
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<button><img src="arrowRight.png" alt="profile" width="21" height="21"></button>
+			</div>
+		</div>
+
+		<div class="collections">
+			<div id="unerten3turul" class="d-flex justify-content-between row"></div>
+			<!--<div class="collectionItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="115" height="200"></div>
+				<div><b>UNERTENII NER</b></div>
+				<div><p></p>UNERTENII BRAND</div>
+			</div>
+
+			<div class="collectionItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="115" height="200"></div>
+				<div><b>UNERTENII NER</b></div>
+				<div><p></p>UNERTENII BRAND</div>
+			</div>
+
+			<div class="collectionItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="115" height="200"></div>
+				<div><b>UNERTENII NER</b></div>
+				<div><p></p>UNERTENII BRAND</div>
+			</div>-->
+		    <script type="text/javascript">
+		    	var myCard = [
+		    	{
+		    		"name": "Tihota Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/37401.jpg?width=400&404=product.png",
+		    		"brand": "Indult",
+		    		"note": "Vanilla bean, musks"
+		    	},
+		    	{
+		    		"name": "Sola Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/788011.jpg?width=400&404=product.png",
+		    		"brand": "Di Ser",
+		    		"note": "Lavender, Yuzu, Lemongrass, Magnolia, Geranium, Jasmine, Frankincense, Myrrh"
+		    	},
+		    	{
+		    		"name": "Kagiroi Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/788012.jpg?width=400&404=product.png",
+		    		"brand": "Di Ser",
+		    		"note": "Green yuzu, green shikuwasa, sansho seed, coriander, ylang-ylang, shiso, rosewood, vetiver, hinoki"
+		    	}
+		    	]
+
+		    	hiiii();
+
+		    	function hiiii() {
+		    		for(i=0; i<myCard.length; i++) {
+		    			var card = document.createElement("div");
+				    //card.classList.add("card");
+				    card.style.width = '18rem';
+
+				    //Creating img tag
+				    var img = document.createElement("img");
+				    img.src = myCard[i].image;
+				    img.classList.add('card-img-top');
+				    card.appendChild(img);
+
+				    //Creating div card-body
+				    var cardBody = document.createElement("div");
+				    cardBody.classList.add("card-body");
+				    card.appendChild(cardBody);
+
+				    //Creating h5 card-title
+				    var cardTitle = document.createElement("b");
+				    cardTitle.classList.add("card-name");
+				    cardTitle.innerHTML = myCard[i].name;
+				    cardBody.appendChild(cardTitle);
+
+				    //Creating p card-text
+				    var cardText = document.createElement("p");
+				    cardText.classList.add("card-brand");
+				    cardText.innerHTML = myCard[i].brand;
+				    cardBody.appendChild(cardText);
+
+				    //Creating a btn btn-primary
+				    var cardText1 = document.createElement("p");
+				    cardText1.classList.add("card-notes");
+				    cardText1.innerHTML = myCard[i].note;
+				    cardBody.appendChild(cardText1);
+
+				    var multiCard = document.getElementById("unerten3turul");
+			        multiCard.appendChild(card);
+		    		}
+		    	}
+		    </script>
+	    </div>
+
+	    <div id="candless" class="collections">
+			<div id="colCandle"><p>CANDLE</p></div>
+	    </div>
+
+	    <div class="collections">
+		<div class="d-flex justify-content-between">
+			<div id="words" class="d-flex"><b>Your home. </b><i> Your choice.</i></div>
+			<div>
+				<div>For businesses, a scent carries as</div>
+				<div>much weight as its colors, logo,</div>
+				<div>music or marketing material.</div>
+			</div>
+			<div><p><a href="HomeCandle.html" style="color: black;">SEE MORE</a></p></div>
+		</div>
+	    </div>
+
+	    <div class="collections">
+		   <div id="laanii3turul" class="d-flex justify-content-between row"></div>
+			<!--<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="150" height="240"></div>
+				<div><b>LAANII NER</b></div>
+				<div><p></p>LAANII BRAND</div>
+				<div><b>LAANII UNE</b></div>
+			</div>
+
+			<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="150" height="240"></div>
+				<div><b>LAANII NER</b></div>
+				<div><p></p>LAANII BRAND</div>
+				<div><b>LAANII UNE</b></div>
+			</div>
+
+			<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="150" height="240"></div>
+				<div><b>LAANII NER</b></div>
+				<div><p></p>LAANII BRAND</div>
+				<div><b>LAANII UNE</b></div>
+			</div>
+
+			<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="130" height="240"></div>
+				<div><b>LAANII NER</b></div>
+				<div><p></p>LAANII BRAND</div>
+				<div><b>LAANII UNE</b></div>
+			</div>-->
+			<script type="text/javascript">
+				var myCard = [
+		    	{
+		    		"name": "Velvet Fantasy Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/354013.jpg?width=400&404=product.png",
+		    		"brand": "Montale",
+		    		"note": "tangerine, pink pepper, black coffee, leather, violet, jasmine, lily of the valley, heliotro, summer night",
+		    		"price": "15$"
+		    	},
+		    	{
+		    		"name": "A Blvd. Called Sunset Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/56719.jpg?width=400&404=product.png",
+		    		"brand": "A Lab on Fire",
+		    		"note": "Bergamot, almond, violet, jasmine, leather, sandalwood, vanilla, tonka, smells like teen spirit",
+		    		"price": "20$"
+		    	},
+		    	{
+		    		"name": "Freckled and Beautiful Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/56720.jpg?width=400&404=product.png",
+		    		"brand": "A Lab on Fire",
+		    		"note": "Orange flower, neroli, honeysuckle, warm milk, pastry, salicylates, sandalwood, vanilla bean, helio",
+		    		"price": "18$"
+		    	},
+		    	{
+		    		"name": "Exit the King Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/477053.jpg?width=400&404=product.png",
+		    		"brand": "Etat Libre d'Orange",
+		    		"note": "Timur JE, Soap Foam Accord (Aldehydes & Musk), Pink Pepper, Jasmine e-pure, Rose Superessence, Lily",
+		    		"price": "25$"
+		    	}
+		    	]
+
+		    	laa3();
+
+		    	function laa3() {
+		    		for(i=0; i<myCard.length; i++) {
+		    			var card = document.createElement("div");
+				    //card.classList.add("card");
+				    card.style.width = '16rem';
+
+				    //Creating img tag
+				    var img = document.createElement("img");
+				    img.src = myCard[i].image;
+				    img.classList.add('card-img-top');
+				    card.appendChild(img);
+
+				    //Creating div card-body
+				    var cardBody = document.createElement("div");
+				    cardBody.classList.add("card-body");
+				    card.appendChild(cardBody);
+
+				    //Creating h5 card-title
+				    var cardTitle = document.createElement("b");
+				    cardTitle.classList.add("card-name");
+				    cardTitle.innerHTML = myCard[i].name;
+				    cardBody.appendChild(cardTitle);
+
+				    //Creating p card-text
+				    var cardText = document.createElement("p");
+				    cardText.classList.add("card-brand");
+				    cardText.innerHTML = myCard[i].brand;
+				    cardBody.appendChild(cardText);
+
+				    //Creating a btn btn-primary
+				    var cardText1 = document.createElement("p");
+				    cardText1.classList.add("card-notes");
+				    cardText1.innerHTML = myCard[i].note;
+				    cardBody.appendChild(cardText1);
+
+				    var cardText2 = document.createElement("b");
+				    cardText2.classList.add("card-notes");
+				    cardText2.innerHTML = myCard[i].price;
+				    cardBody.appendChild(cardText2);
+
+				    var multiCard = document.getElementById("laanii3turul");
+			        multiCard.appendChild(card);
+		    		}
+		    	}
+			</script>
+	    </div>
+	</section>
+
+	<section class="container-fluid">
+		<div id="todaysOffer" class="d-flex justify-content-around">
+			<div><p>TODAY'S OFFER</p></div>
+			<div id="collectionButton">
+				<button><img src="arrowLeft.png" alt="profile" width="21" height="21"></button>
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<button><img src="arrowRight.png" alt="profile" width="21" height="21"></button>
+			</div>
+		</div>
+
+		<div class="offers">
+			<div id="offersPicture">
+			</div>
+			<div id="words" class="d-flex"><b>Choose your style, </b><p> discover yourself.</p></div>
+		</div>
+
+		<div class="offers">
+			<div id="offDiff"><p>DIFFUSERS</p></div>
+		</div>
+
+		<div class="offers">
+		<div class="d-flex justify-content-between">
+			<div id="words" class="d-flex"><b>Your perfume. </b><i> Your taste.</i></div>
+			<div>
+				<div>Lilac Homes scents are available in</div>
+				<div>scented candle, diffuser, or spray.</div>
+			</div>
+			<div><p><a href="Diffusers.html" style="color: black;">SEE MORE</a></p></div>
+		</div>
+	    </div>
+
+	    <div class="offers">
+			<div id="sawhan3turul" class="d-flex justify-content-between row"></div>
+			<!--<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="150" height="240"></div>
+				<div><b>SAWHAN UNERTNII NER</b></div>
+				<div><p></p>SAWHAN UNERTNII BRAND</div>
+				<div><b>SAWHAN UNERTNII UNE</b></div>
+			</div>
+
+			<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="150" height="240"></div>
+				<div><b>SAWHAN UNERTNII NER</b></div>
+				<div><p></p>SAWHAN UNERTNII BRAND</div>
+				<div><b>SAWHAN UNERTNII UNE</b></div>
+			</div>
+
+			<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="150" height="240"></div>
+				<div><b>SAWHAN UNERTNII NER</b></div>
+				<div><p></p>SAWHAN UNERTNII BRAND</div>
+				<div><b>SAWHAN UNERTNII UNE</b></div>
+			</div>
+
+			<div class="candleItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="130" height="240"></div>
+				<div><b>SAWHAN UNERTNII NER</b></div>
+				<div><p></p>SAWHAN UNERTNII BRAND</div>
+				<div><b>SAWHAN UNERTNII UNE</b></div>
+			</div>-->
+			<script type="text/javascript">
+				var myCard = [
+		    	{
+		    		"name": "Eshu Extrait",
+		    		"image": "https://static.luckyscent.com/images/products/847005.jpg?width=400&404=product.png",
+		    		"brand": "PRIN",
+		    		"note": "Tobacco, hay, elemi, copaiba, olibanum, nutmeg, black pepper, castoreum, atlas cedar, oakmoss, cogn",
+		    		"price": "24$"
+		    	},
+		    	{
+		    		"name": "Saringkarn Extrait",
+		    		"image": "https://static.luckyscent.com/images/products/847006.jpg?width=400&404=product.png",
+		    		"brand": "PRIN",
+		    		"note": "Saffron, champaca, fir balsam, beeswax, amber, damask rose, rose de mai, tobacco, leather, dark chocolate",
+		    		"price": "25$"
+		    	},
+		    	{
+		    		"name": "Arsalan Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/847007.jpg?width=400&404=product.png",
+		    		"brand": "PRIN",
+		    		"note": "Cambodian oud, Trat oud, jasmin sambac, champaca, olibanum, turmeric, clove, caraway, cardamom, cinnamon",
+		    		"price": "22$"
+		    	},
+		    	{
+		    		"name": "Nocturnal Poetry Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/847008.jpg?width=400&404=product.png",
+		    		"brand": "PRIN",
+		    		"note": "Violet, champaca, rosewood, beeswax, frankincense, myrrh, coffee bean, rose, tobacco, hay, jasmine",
+		    		"price": "20$"
+		    	}
+		    	]
+
+		    	unerten3();
+
+		    	function unerten3() {
+		    		for(i=0; i<myCard.length; i++) {
+		    			var card = document.createElement("div");
+				    //card.classList.add("card");
+				    card.style.width = '16rem';
+
+				    //Creating img tag
+				    var img = document.createElement("img");
+				    img.src = myCard[i].image;
+				    img.classList.add('card-img-top');
+				    card.appendChild(img);
+
+				    //Creating div card-body
+				    var cardBody = document.createElement("div");
+				    cardBody.classList.add("card-body");
+				    card.appendChild(cardBody);
+
+				    //Creating h5 card-title
+				    var cardTitle = document.createElement("b");
+				    cardTitle.classList.add("card-name");
+				    cardTitle.innerHTML = myCard[i].name;
+				    cardBody.appendChild(cardTitle);
+
+				    //Creating p card-text
+				    var cardText = document.createElement("p");
+				    cardText.classList.add("card-brand");
+				    cardText.innerHTML = myCard[i].brand;
+				    cardBody.appendChild(cardText);
+
+				    //Creating a btn btn-primary
+				    var cardText1 = document.createElement("p");
+				    cardText1.classList.add("card-notes");
+				    cardText1.innerHTML = myCard[i].note;
+				    cardBody.appendChild(cardText1);
+
+				    var cardText2 = document.createElement("b");
+				    cardText2.classList.add("card-notes");
+				    cardText2.innerHTML = myCard[i].price;
+				    cardBody.appendChild(cardText2);
+
+				    var multiCard = document.getElementById("sawhan3turul");
+			        multiCard.appendChild(card);
+		    	}
+		    }
+			</script>
+	    </div>
+	</section>
+
+	<section class="container-fluid">
+		<div id="bestseller" class="d-flex justify-content-around">
+			<div><p>BEST SELLERS</p></div>
+			<div id="collectionButton">
+				<button><img src="arrowLeft.png" alt="profile" width="21" height="21"></button>
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<img src="circle.png" alt="profile" width="10" height="10">
+				<button><img src="arrowRight.png" alt="profile" width="21" height="21"></button>
+			</div>
+		</div>
+
+		<div class="sellers">
+			<div id="best3turul" class="d-flex justify-content-between row"></div>
+			<!--<div class="collectionItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="115" height="200"></div>
+				<div><b>UNERTENII NER</b></div>
+				<div><p></p>UNERTENII BRAND</div>
+			</div>
+
+			<div class="collectionItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="115" height="200"></div>
+				<div><b>UNERTENII NER</b></div>
+				<div><p></p>UNERTENII BRAND</div>
+			</div>
+
+			<div class="collectionItems col">
+				<div><img src="perfumePic.jpg" alt="profile" width="115" height="200"></div>
+				<div><b>UNERTENII NER</b></div>
+				<div><p></p>UNERTENII BRAND</div>
+			</div>-->
+			<script type="text/javascript">
+				var myCard = [
+		    	{
+		    		"name": "Koala Extrait de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/847009.jpg?width=400&404=product.png",
+		    		"brand": "Zoologist",
+		    		"note": "Eucalyptus, menthol honey gumdrops, mimosa, black tea, geranium, incense, spices, vetiver, musk"
+		    	},
+		    	{
+		    		"name": "L'Homme A La Rose Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/49890.jpg?width=400&404=product.png",
+		    		"brand": "Maison Francis Kurkdjian",
+		    		"note": "Grapefruit, Damascene rose, amber woods accord, sage, Centifolia rose, labdanum"
+		    	},
+		    	{
+		    		"name": "Rozu Eau de Parfum",
+		    		"image": "https://static.luckyscent.com/images/products/30156.jpg?width=400&404=product.png",
+		    		"brand": "Aesop",
+		    		"note": "Rose, shiso, guaiac"
+		    	}
+		    	]
+
+		    	hiiii();
+
+		    	function hiiii() {
+		    		for(i=0; i<myCard.length; i++) {
+		    			var card = document.createElement("div");
+				    //card.classList.add("card");
+				    card.style.width = '18rem';
+
+				    //Creating img tag
+				    var img = document.createElement("img");
+				    img.src = myCard[i].image;
+				    img.classList.add('card-img-top');
+				    card.appendChild(img);
+
+				    //Creating div card-body
+				    var cardBody = document.createElement("div");
+				    cardBody.classList.add("card-body");
+				    card.appendChild(cardBody);
+
+				    //Creating h5 card-title
+				    var cardTitle = document.createElement("b");
+				    cardTitle.classList.add("card-name");
+				    cardTitle.innerHTML = myCard[i].name;
+				    cardBody.appendChild(cardTitle);
+
+				    //Creating p card-text
+				    var cardText = document.createElement("p");
+				    cardText.classList.add("card-brand");
+				    cardText.innerHTML = myCard[i].brand;
+				    cardBody.appendChild(cardText);
+
+				    //Creating a btn btn-primary
+				    var cardText1 = document.createElement("p");
+				    cardText1.classList.add("card-notes");
+				    cardText1.innerHTML = myCard[i].note;
+				    cardBody.appendChild(cardText1);
+
+				    var multiCard = document.getElementById("best3turul");
+			        multiCard.appendChild(card);
+		    		}
+		    	}
+			</script>
+		</div>
+	</section>
+
+	<section>
+		<div id="contacts" class="container-fluid">
+			<div id="ugs">
+				<div><b>GET UPDATES &</b></div>
+				<div><i>STAY CONNECTED</i></div>
+			</div>
+
+			<div id="contact3mur" class="container text-center">
+				<div class="row align-items-center">
+				<div id="sendMail" class="col">
+					<div id="writeMail" class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="your email" aria-label="your email" aria-describedby="basic-addon1"></div>
+                    <div id="sendemailBut"><button>SEND TO US</button></div>
+                    <div id="socialMedias" class="d-flex justify-content-between">
+                    	<div><a class="nav-link active" href="https://www.instagram.com/bloom.is.tsetsu_enkh/?hl=en"><img src="instagram.png" alt="profile" width="25" height="25"></a></div>
+                    	<div><a class="nav-link active" href="aboutTwitter.html"><img src="twitter.png" alt="profile" width="25" height="25"></a></div>
+                    	<div><a class="nav-link active" href="https://www.facebook.com/profile.php?id=100021835275067"><img src="facebook.png" alt="profile" width="25" height="25"></a></div>
+                    </div>
+				</div>
+				<div id="menu" class="col">
+					<div class="idd"><a href="">SHOP ALL</a></div>
+					<div class="idd"><a href="">OUR STORY</a></div>
+					<div class="idd"><a href="HomeCandle.html">HOME CANDLE</a></div>
+					<div class="idd"><a href="Diffusers.html">DIFFUSERS</a></div>
+					<div class="idd"><a href="FragranceSprayes.html">FRAGNANCE SPRAYS</a></div>
+				</div>
+				<div id="menu" class="col">
+					<div class="idd"><a href="">NEW COLLECTION</a></div>
+					<div class="idd"><a href="">ALL COLLECTION</a></div>
+					<div class="idd"><a href="">BEST SELLER</a></div>
+					<div class="idd"><a href="">TODAY'S OFFER</a></div>
+					<div class="idd"><a href="">SCENTED CANDLE</a></div>
+					<div class="idd"><a href="">NORMAL CANDLE</a></div>
+				</div>
+			</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<div id="foot">
+		&copy; 2023 All rights reserved
+	  </div>
+	</footer>
+</body>
+</html>
